@@ -401,11 +401,8 @@ text-align: left;
   
   /* Section Title */
   .stories h2 {
-    /* font-size: 2rem; */
     color: #222;
-    /* font-weight: bold; */
     margin-bottom: 30px;
-    /* text-align: center; */
     font-family: Quicksand;
   font-size: 46px;
   font-weight: 700;
@@ -413,8 +410,7 @@ text-align: left;
   letter-spacing: 0%;
   text-align: center;
   }
-  
-  /* Main Stories Layout */
+
   .stories-container {
     display: flex;
     gap: 20px;
@@ -422,8 +418,6 @@ text-align: left;
     align-items: stretch;
     flex-wrap: wrap;
   }
-  
-  /* Large Story (Story 1) */
   .story-large {
     flex: 1;
     max-width: 500px;
@@ -442,7 +436,6 @@ text-align: left;
     max-width: 600px;
   }
   
-  /* Story Card */
   .story {
     background: #fff;
     padding: 20px;
@@ -452,14 +445,11 @@ text-align: left;
     text-align: left;
     overflow: hidden;
   }
-  
-  /* Story Image */
+
   .story img {
     width: 100%;
     border-radius: 15px 15px 0 0;
   }
-  
-  /* Date Positioned Between Image & Content */
   .story .date {
     font-size: 0.85rem;
     color: white;
@@ -473,27 +463,21 @@ text-align: left;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  /* Different Colors for Date Tags */
   .stories-grid .story:nth-child(1) .date { background: #7ea04d; }
   .stories-grid .story:nth-child(2) .date { background: #4b3ea7; }
   .stories-grid .story:nth-child(3) .date { background: #90be6d; }
   .stories-grid .story:nth-child(4) .date { background: #63a36f; }
   
-  /* Story Heading */
   .story h3 {
     font-size: 1.2rem;
     color: #222;
     font-weight: bold;
     margin: 15px 0 10px;
   }
-  
-  /* Story Description */
   .story p {
     font-size: 1rem;
     color: #555;
   }
-  
-  /* RESPONSIVENESS */
   @media (max-width: 768px) {
     .stories-container {
       flex-direction: column;
@@ -503,8 +487,6 @@ text-align: left;
       grid-template-columns: 1fr;
     }
   }
-  
-  /* View All Button */
   .view-all-container {
     text-align: center;
     margin-top: 20px;
