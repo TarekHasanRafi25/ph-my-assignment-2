@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: #3b3b3b;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  color: rgb(17, 17, 17);
+font-family: Quicksand;
+font-size: 32px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  transition: 0.3s;
+}
+/* Navigation Links - Different Colors */
+.nav-links .home-link {
+  color: orange !important;
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0%;
+
+}
+
+.nav-links .about-link {
+  color: rgb(1, 172, 253) !important;
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0%;
+}
+
+.nav-links .facilities-link {
+  color: rgb(5, 212, 223) !important;
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0%;
+}
+
+.nav-links .admission-link {
+  color: rgb(93, 88, 239) !important;
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0%;
+
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* Contact Button */
+.contact-btn {
+  background:rgb(254, 163, 1);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.contact-btn:hover {
+  background: rgb(244, 155, 1);
+  opacity: 0.7;
+}
+
+/* Menu Icon (Hidden by default on larger screens) */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .contact-btn {
+      display: none;
+  }
+
+  .menu-icon {
+      display: flex;
+  }
+}
