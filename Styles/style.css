@@ -151,3 +151,141 @@ text-align: left;
       display: flex;
   }
 }
+
+/* Banner Section */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .banner-content {
+    font-family: Quicksand, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+    max-width: 40%;
+    text-align: left;
+    position: static;
+    width: 640px;
+    height: 331px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 50px;
+  }
+  .banner-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  .banner-heading {
+    position: static;
+    width: 640px;
+    height: 183px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 24px 0px;
+  }
+  
+  .highlight-orange {
+    color: #fea301;
+  }
+  
+  .highlight-blue {
+    color: #008cfe;
+  }
+  .banner-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 20px 0;
+  
+  }
+  .banner-description {
+    font-size: 1.1rem;
+    color: rgb(17, 17, 17);
+    line-height: 1.6;
+    max-width: 80%;
+    position: static;
+    width: 640px;
+    height: 183px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 24px 0px;
+  }
+  /* Button */
+  .enroll-btn {
+    background: #000;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  .banner-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-image img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner {
+      flex-direction: column;
+      text-align: center;
+      overflow: hidden;
+    }
+  
+    .banner-content {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+    }
+  
+    .banner-image {
+        width: 50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .banner-image img {
+        width: 100%; 
+        max-width: 500px; 
+        height: auto; 
+        position: static;
+    }
+  }
