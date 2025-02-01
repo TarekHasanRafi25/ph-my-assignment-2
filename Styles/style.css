@@ -292,7 +292,7 @@ text-align: left;
   /* Standard Curriculum */
 .curriculum {
     padding: 60px 20px;
-    background: #f8f8f8 url(bg.png);
+    background: url("bg.png") #f8f8f8;
     text-align: center;
     font-family: "Quicksand", serif;
   }
@@ -387,4 +387,155 @@ text-align: left;
     .card {
       width: 95%;
     }
+  }
+  /* Our Stories Section */
+  .stories {
+    padding: 50px 20px;
+    background: url("bg.png"), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%); 
+                 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  
+  }
+  
+  /* Section Title */
+  .stories h2 {
+    /* font-size: 2rem; */
+    color: #222;
+    /* font-weight: bold; */
+    margin-bottom: 30px;
+    /* text-align: center; */
+    font-family: Quicksand;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px;
+  letter-spacing: 0%;
+  text-align: center;
+  }
+  
+  /* Main Stories Layout */
+  .stories-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  
+  /* Large Story (Story 1) */
+  .story-large {
+    flex: 1;
+    max-width: 500px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Grid for Small Stories */
+  .stories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  /* Story Card */
+  .story {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  /* Story Image */
+  .story img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  /* Date Positioned Between Image & Content */
+  .story .date {
+    font-size: 0.85rem;
+    color: white;
+    font-weight: bold;
+    background: #32a852;
+    padding: 6px 12px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Different Colors for Date Tags */
+  .stories-grid .story:nth-child(1) .date { background: #7ea04d; }
+  .stories-grid .story:nth-child(2) .date { background: #4b3ea7; }
+  .stories-grid .story:nth-child(3) .date { background: #90be6d; }
+  .stories-grid .story:nth-child(4) .date { background: #63a36f; }
+  
+  /* Story Heading */
+  .story h3 {
+    font-size: 1.2rem;
+    color: #222;
+    font-weight: bold;
+    margin: 15px 0 10px;
+  }
+  
+  /* Story Description */
+  .story p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* RESPONSIVENESS */
+  @media (max-width: 768px) {
+    .stories-container {
+      flex-direction: column;
+    }
+  
+    .stories-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* View All Button */
+  .view-all-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-all-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #333;
+  }
+  /* Marquee Styling */
+  .marquee {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: #ff9800;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Hide Arrow Button in Standard Curriculum Section */
+  .standard-curriculum .arrow-buttons {
+    display: none;
   }
