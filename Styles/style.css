@@ -521,3 +521,79 @@ text-align: left;
   .standard-curriculum .arrow-buttons {
     display: none;
   }
+  /* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #2196f3;
+    color: #fff;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+  }
+  
+  .footer-logo {
+    text-align: left;
+  }
+  
+  .footer-logo .logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .site-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .about-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 5px;
+  }
+  
+  .footer-column h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-logo {
+      text-align: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  
